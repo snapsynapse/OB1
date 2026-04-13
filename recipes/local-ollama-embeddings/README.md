@@ -100,7 +100,9 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 # Edit .env with your Supabase credentials
-export $(cat .env | xargs)
+set -a
+source .env
+set +a
 ```
 
 ### 5. Embed a thought
